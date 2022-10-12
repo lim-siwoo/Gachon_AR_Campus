@@ -1,34 +1,26 @@
 package com.siwoosiwoo.gachon_arnavigation_1011;
 
 import android.annotation.SuppressLint;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
-import android.graphics.BitmapFactory;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
-import android.net.Uri;
 import android.os.Bundle;
 
 import java.io.IOException;
 import java.lang.ref.WeakReference;
-import java.util.Arrays;
 import java.util.List;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Process;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.EditText;
 import android.widget.PopupMenu;
-import android.widget.TextView;
 import android.widget.Toast;
 
 // classes needed to initialize map
@@ -82,7 +74,6 @@ import com.mapbox.api.directions.v5.models.DirectionsRoute;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import timber.log.Timber;
 
 import android.util.Log;
 
@@ -90,6 +81,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import com.mapbox.services.android.navigation.ui.v5.NavigationLauncher;
+import com.mapbox.vision.ar.VisionArManager;
+import com.mapbox.vision.ar.core.models.Route;
 
 
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback, MapboxMap.OnMapClickListener, PermissionsListener {
@@ -128,7 +121,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private Point destinatonPosition;
     private Point searchedPosition;
     private MapboxDirections client;
-    private Button startButton, mylocButton, dkuButton, arButton, dtbutton;
+    private Button startButton, mylocButton, gcuButton, arButton, dtbutton;
 
 
     //EditText editText;
@@ -139,9 +132,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public static double Lo; // longitude
 
     // 학교 중앙 좌표
-    // 37.321229, 127.127432
-    public static double DKULa = 37.45048;
-    public static double DKULo = 127.12952;
+    // 37.45048, 127.12952
+    public static double GCULa = 37.45048;
+    public static double GCULo = 127.12952;
 
     // 자동 완성
     //static TextView txtView;
@@ -353,8 +346,15 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         arButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent(getApplicationContext(), UnityPlayerActivity.class);
-//                startActivity(intent);
+
+                if (currentRoute == null){
+                    Toast.makeText(MainActivity.this, "Route is not ready yet!", Toast.LENGTH_LONG).show();
+                } else {
+                    ArActivity.currentRoute = currentRoute;
+//                    Intent intent = new Intent(MainActivity.this, ArActivity.class);
+//                    startActivity(intent);
+                }
+//                ArActivity.
             }
         });
 
@@ -379,12 +379,12 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         });
 
         // 학교 위치로 카메라 이동
-        dkuButton = findViewById(R.id.btnDKU);
-        dkuButton.setOnClickListener(new View.OnClickListener() {
+        gcuButton = findViewById(R.id.btnDKU);
+        gcuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 CameraPosition position = new CameraPosition.Builder()
-                        .target(new LatLng(DKULa, DKULo)) // Sets the new camera position
+                        .target(new LatLng(GCULa, GCULo)) // Sets the new camera position
                         .zoom(16) // Sets the zoom , 줌 정도 숫자가 클수록 더많이 줌함
                         .bearing(180) // Rotate the camera , 카메라 방향(북쪽이 0) 북쪽부터 시계방향으로 측정
                         .tilt(0) // Set the camera tilt , 각도

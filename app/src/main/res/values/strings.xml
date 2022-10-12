@@ -105,4 +105,15 @@
     <string name="Music_Hall">음악관</string>
     <string name="Arts_Hall">미술관</string>
     <string name="Waterfall_Park">폭포공원</string>
+    <string name="title_activity_ar_activitiy">ArActivitiy</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="vision_not_supported_title">Device is not supported</string>
+    <string name="vision_not_supported_message">Vision SDK does not support this device yet, check more details at &lt;a href=\"https://docs.mapbox.com/android/vision/overview/#requirements\">docs.mapbox.com&lt;/a></string>
+
+
 </resources>
