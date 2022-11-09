@@ -52,4 +52,9 @@ dependencies {
 
     implementation "com.mapbox.mapboxsdk:mapbox-android-core:1.3.0"
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
+
+    implementation project(':unityLibrary')
+    implementation fileTree(dir: project(':unityLibrary').getProjectDir().toString() + ('\\libs'), include: ['*.jar'])
+
+
 }

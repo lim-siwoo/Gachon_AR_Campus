@@ -83,6 +83,7 @@ import android.widget.Button;
 import com.mapbox.services.android.navigation.ui.v5.NavigationLauncher;
 import com.mapbox.vision.ar.VisionArManager;
 import com.mapbox.vision.ar.core.models.Route;
+import com.unity3d.player.UnityPlayerActivity;
 
 
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback, MapboxMap.OnMapClickListener, PermissionsListener {
@@ -351,8 +352,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     Toast.makeText(MainActivity.this, "Route is not ready yet!", Toast.LENGTH_LONG).show();
                 } else {
                     ArActivity.currentRoute = currentRoute;
-//                    Intent intent = new Intent(MainActivity.this, ArActivity.class);
-//                    startActivity(intent);
+                    Intent intent = new Intent(MainActivity.this, UnityPlayerActivity.class);
+                    startActivity(intent);
                 }
 //                ArActivity.
             }
