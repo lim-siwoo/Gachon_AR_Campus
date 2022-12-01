@@ -81,9 +81,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import com.mapbox.services.android.navigation.ui.v5.NavigationLauncher;
-import com.mapbox.vision.ar.VisionArManager;
-import com.mapbox.vision.ar.core.models.Route;
-import com.unity3d.player.UnityPlayerActivity;
+//import com.mapbox.vision.ar.VisionArManager;
+//import com.mapbox.vision.ar.core.models.Route;
 
 
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback, MapboxMap.OnMapClickListener, PermissionsListener {
@@ -212,126 +211,126 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                     public boolean onMenuItemClick(MenuItem item) {
                         //제 1공학관
                         if (item.getItemId() == R.id.action_menu1){
-                            destination_zoom(37.32119,127.12584);
+                            destination_zoom(37.45158,127.12795);
                         }
                         //제 2공학관
                         else if (item.getItemId() == R.id.action_menu2){
-                            destination_zoom(37.32080,127.12629);
+                            destination_zoom(37.45047,127.12842);
                         }
-                        //제 3공학관
+                        //가천관
                         else if (item.getItemId() == R.id.action_menu3){
-                            destination_zoom(37.32043,127.12676);
+                            destination_zoom(37.45048,127.12952);
                         }
-                        //사회과학관
+                        //AI 공학관
                         else if (item.getItemId() == R.id.action_menu4){
-                            destination_zoom(37.32137,127.12564);
+                            destination_zoom(37.45532,127.13438);
                         }
-                        //소프트웨어 ICT관
+                        //가천대역
                         else if (item.getItemId() == R.id.action_menu5){
-                            destination_zoom(37.32274,127.12753);
+                            destination_zoom(37.44939,127.12768);
                         }
                         //미디어센터
                         else if (item.getItemId() == R.id.action_menu6){
-                            destination_zoom(37.32242,127.12753);
+                            destination_zoom(37.45191,127.12708);
                         }
-                        //범정관
-                        else if (item.getItemId() == R.id.action_menu7){
-                            destination_zoom(37.32196,127.12641);
-                        }
-                        //인문관
-                        else if (item.getItemId() == R.id.action_menu8){
-                            destination_zoom(37.32178,127.12896);
-                        }
-                        //상경관
-                        else if (item.getItemId() == R.id.action_menu9){
-                            destination_zoom(37.32227,127.12894);
-                        }
-                        //사범관
-                        else if (item.getItemId() == R.id.action_menu10){
-                            destination_zoom(37.32272,127.12897);
-                        }
-                        //혜당관
-                        else if (item.getItemId() == R.id.action_menu11){
-                            destination_zoom(37.32047,127.12827);
-                        }
-                        //퇴계기념중앙도서관
-                        else if (item.getItemId() == R.id.action_menu12){
-                            destination_zoom(37.32116,127.12746);
-                        }
-                        //법학관, 대학원동
-                        else if (item.getItemId() == R.id.action_menu13){
-                            destination_zoom(37.32107,127.12921);
-                        }
-                        //국제관
-                        else if (item.getItemId() == R.id.action_menu14){
-                            destination_zoom(37.31919,127.12717);
-                        }
-                        //종합실험동
-                        else if (item.getItemId() == R.id.action_menu15){
-                            destination_zoom(37.32014,127.12577);
-                        }
-                        //곰상
-                        else if (item.getItemId() == R.id.action_menu16){
-                            destination_zoom(37.31996,127.12892);
-                        }
-                        //정문
-                        else if (item.getItemId() == R.id.action_menu17){
-                            destination_zoom(37.32346,127.12547);
-                        }
-
-                        //체육관
-                        else if (item.getItemId() == R.id.action_menu18){
-                            destination_zoom(37.31936,127.13213);
-                        }
-                        //대운동장
-                        else if (item.getItemId() == R.id.action_menu19){
-                            destination_zoom(37.32080,127.13300);
-                        }
-
-                        //무용관
-                        else if (item.getItemId() == R.id.action_menu20){
-                            destination_zoom(37.31585,127.12724);
-                        }
-
-                        //진리관
-                        else if (item.getItemId() == R.id.action_menu21){
-                            destination_zoom(37.31479,127.12682);
-                        }
-
-                        //웅비홀
-                        else if (item.getItemId() == R.id.action_menu22){
-                            destination_zoom(37.31567,127.12698);
-                        }
-
-                        //집현재
-                        else if (item.getItemId() == R.id.action_menu23){
-                            destination_zoom(37.31667,127.12695);
-                        }
-
-                        //죽전치과병원
-                        else if (item.getItemId() == R.id.action_menu24){
-                            destination_zoom(37.32187,127.12513);
-                        }
-
-                        //노천마당, 풋살장
-                        else if (item.getItemId() == R.id.action_menu25){
-                            destination_zoom(37.31988,127.12724);
-                        }
-
-                        //음악관
-                        else if (item.getItemId() == R.id.action_menu26){
-                            destination_zoom(37.31918,127.12935);
-                        }
-
-                        //미술관
-                        else if (item.getItemId() == R.id.action_menu27){
-                            destination_zoom(37.31983,127.13088);
-                        }
-
-                        //폭포공원
-                        else if (item.getItemId() == R.id.action_menu28){
-                            destination_zoom(37.32082,127.13065);
-                        }
+//                        //범정관
+//                        else if (item.getItemId() == R.id.action_menu7){
+//                            destination_zoom(37.32196,127.12641);
+//                        }
+//                        //인문관
+//                        else if (item.getItemId() == R.id.action_menu8){
+//                            destination_zoom(37.32178,127.12896);
+//                        }
+//                        //상경관
+//                        else if (item.getItemId() == R.id.action_menu9){
+//                            destination_zoom(37.32227,127.12894);
+//                        }
+//                        //사범관
+//                        else if (item.getItemId() == R.id.action_menu10){
+//                            destination_zoom(37.32272,127.12897);
+//                        }
+//                        //혜당관
+//                        else if (item.getItemId() == R.id.action_menu11){
+//                            destination_zoom(37.32047,127.12827);
+//                        }
+//                        //퇴계기념중앙도서관
+//                        else if (item.getItemId() == R.id.action_menu12){
+//                            destination_zoom(37.32116,127.12746);
+//                        }
+//                        //법학관, 대학원동
+//                        else if (item.getItemId() == R.id.action_menu13){
+//                            destination_zoom(37.32107,127.12921);
+//                        }
+//                        //국제관
+//                        else if (item.getItemId() == R.id.action_menu14){
+//                            destination_zoom(37.31919,127.12717);
+//                        }
+//                        //종합실험동
+//                        else if (item.getItemId() == R.id.action_menu15){
+//                            destination_zoom(37.32014,127.12577);
+//                        }
+//                        //곰상
+//                        else if (item.getItemId() == R.id.action_menu16){
+//                            destination_zoom(37.31996,127.12892);
+//                        }
+//                        //정문
+//                        else if (item.getItemId() == R.id.action_menu17){
+//                            destination_zoom(37.32346,127.12547);
+//                        }
+//
+//                        //체육관
+//                        else if (item.getItemId() == R.id.action_menu18){
+//                            destination_zoom(37.31936,127.13213);
+//                        }
+//                        //대운동장
+//                        else if (item.getItemId() == R.id.action_menu19){
+//                            destination_zoom(37.32080,127.13300);
+//                        }
+//
+//                        //무용관
+//                        else if (item.getItemId() == R.id.action_menu20){
+//                            destination_zoom(37.31585,127.12724);
+//                        }
+//
+//                        //진리관
+//                        else if (item.getItemId() == R.id.action_menu21){
+//                            destination_zoom(37.31479,127.12682);
+//                        }
+//
+//                        //웅비홀
+//                        else if (item.getItemId() == R.id.action_menu22){
+//                            destination_zoom(37.31567,127.12698);
+//                        }
+//
+//                        //집현재
+//                        else if (item.getItemId() == R.id.action_menu23){
+//                            destination_zoom(37.31667,127.12695);
+//                        }
+//
+//                        //죽전치과병원
+//                        else if (item.getItemId() == R.id.action_menu24){
+//                            destination_zoom(37.32187,127.12513);
+//                        }
+//
+//                        //노천마당, 풋살장
+//                        else if (item.getItemId() == R.id.action_menu25){
+//                            destination_zoom(37.31988,127.12724);
+//                        }
+//
+//                        //음악관
+//                        else if (item.getItemId() == R.id.action_menu26){
+//                            destination_zoom(37.31918,127.12935);
+//                        }
+//
+//                        //미술관
+//                        else if (item.getItemId() == R.id.action_menu27){
+//                            destination_zoom(37.31983,127.13088);
+//                        }
+//
+//                        //폭포공원
+//                        else if (item.getItemId() == R.id.action_menu28){
+//                            destination_zoom(37.32082,127.13065);
+//                        }
                         //리턴 값은 true, false 든 크게 상관없는 것 같음, 개발자도 잘 모르겠음
                         return false;
                     }
@@ -351,8 +350,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 if (currentRoute == null){
                     Toast.makeText(MainActivity.this, "Route is not ready yet!", Toast.LENGTH_LONG).show();
                 } else {
-                    ArActivity.currentRoute = currentRoute;
-                    Intent intent = new Intent(MainActivity.this, UnityPlayerActivity.class);
+//                    ArActivity.currentRoute = currentRoute;
+                    Intent intent = new Intent(MainActivity.this, ArActivity.class);
                     startActivity(intent);
                 }
 //                ArActivity.

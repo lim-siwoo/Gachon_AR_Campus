@@ -79,10 +79,10 @@
     <string name="destination_setting">목적지 설정</string>
     <string name="College_of_Engineering_Building1">제 1공학관</string>
     <string name="College_of_Engineering_Building2">제 2공학관</string>
-    <string name="College_of_Engineering_Building3">제 3공학관</string>
-    <string name="Social_Science_Hall">사회과학관</string>
-    <string name="Software_ICT_Hall">소프트웨어 ICT관</string>
-    <string name="Media_Center">미디어센터</string>
+    <string name="College_of_Engineering_Building3">가천관</string>
+    <string name="Social_Science_Hall">AI 공학관</string>
+    <string name="Software_ICT_Hall">가천대역</string>
+    <string name="Media_Center">글로벌센터</string>
     <string name="BumJeong_Hall">범정관</string>
     <string name="Humanities_Hall">인문관</string>
     <string name="Business_and_Economics_Hall">상경관</string>
@@ -105,6 +105,7 @@
     <string name="Music_Hall">음악관</string>
     <string name="Arts_Hall">미술관</string>
     <string name="Waterfall_Park">폭포공원</string>
+    <string name="Gachon_Hall">가천관</string>
     <string name="title_activity_ar_activitiy">ArActivitiy</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
