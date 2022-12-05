@@ -229,80 +229,80 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         else if (item.getItemId() == R.id.action_menu5){
                             destination_zoom(37.44939,127.12768);
                         }
-                        //미디어센터
+                        //글로벌센터
                         else if (item.getItemId() == R.id.action_menu6){
                             destination_zoom(37.45191,127.12708);
                         }
-//                        //범정관
-//                        else if (item.getItemId() == R.id.action_menu7){
-//                            destination_zoom(37.32196,127.12641);
-//                        }
-//                        //인문관
-//                        else if (item.getItemId() == R.id.action_menu8){
-//                            destination_zoom(37.32178,127.12896);
-//                        }
-//                        //상경관
-//                        else if (item.getItemId() == R.id.action_menu9){
-//                            destination_zoom(37.32227,127.12894);
-//                        }
-//                        //사범관
-//                        else if (item.getItemId() == R.id.action_menu10){
-//                            destination_zoom(37.32272,127.12897);
-//                        }
-//                        //혜당관
-//                        else if (item.getItemId() == R.id.action_menu11){
-//                            destination_zoom(37.32047,127.12827);
-//                        }
-//                        //퇴계기념중앙도서관
-//                        else if (item.getItemId() == R.id.action_menu12){
-//                            destination_zoom(37.32116,127.12746);
-//                        }
-//                        //법학관, 대학원동
-//                        else if (item.getItemId() == R.id.action_menu13){
-//                            destination_zoom(37.32107,127.12921);
-//                        }
-//                        //국제관
-//                        else if (item.getItemId() == R.id.action_menu14){
-//                            destination_zoom(37.31919,127.12717);
-//                        }
-//                        //종합실험동
-//                        else if (item.getItemId() == R.id.action_menu15){
-//                            destination_zoom(37.32014,127.12577);
-//                        }
-//                        //곰상
-//                        else if (item.getItemId() == R.id.action_menu16){
-//                            destination_zoom(37.31996,127.12892);
-//                        }
-//                        //정문
-//                        else if (item.getItemId() == R.id.action_menu17){
-//                            destination_zoom(37.32346,127.12547);
-//                        }
-//
-//                        //체육관
-//                        else if (item.getItemId() == R.id.action_menu18){
-//                            destination_zoom(37.31936,127.13213);
-//                        }
-//                        //대운동장
-//                        else if (item.getItemId() == R.id.action_menu19){
-//                            destination_zoom(37.32080,127.13300);
-//                        }
-//
-//                        //무용관
-//                        else if (item.getItemId() == R.id.action_menu20){
-//                            destination_zoom(37.31585,127.12724);
-//                        }
-//
-//                        //진리관
-//                        else if (item.getItemId() == R.id.action_menu21){
-//                            destination_zoom(37.31479,127.12682);
-//                        }
-//
-//                        //웅비홀
-//                        else if (item.getItemId() == R.id.action_menu22){
-//                            destination_zoom(37.31567,127.12698);
-//                        }
-//
-//                        //집현재
+                        //IT융합대학
+                        else if (item.getItemId() == R.id.action_menu7){
+                            destination_zoom(37.45099,127.12714);
+                        }
+                        //산학협력관
+                        else if (item.getItemId() == R.id.action_menu8){
+                            destination_zoom(37.44952,127.12945);
+                        }
+                        //한의과대학
+                        else if (item.getItemId() == R.id.action_menu9){
+                            destination_zoom(37.45004,127.12847);
+                        }
+                        //바이오나노연구원
+                        else if (item.getItemId() == R.id.action_menu10){
+                            destination_zoom(37.44988,127.12804);
+                        }
+                        //법과대학
+                        else if (item.getItemId() == R.id.action_menu11){
+                            destination_zoom(37.44925,127.12745);
+                        }
+                        //비전타워
+                        else if (item.getItemId() == R.id.action_menu12){
+                            destination_zoom(37.44967,127.12714);
+                        }
+                        //정문
+                        else if (item.getItemId() == R.id.action_menu13){
+                            destination_zoom(37.45050,127.12684);
+                        }
+                        //전자정보도서관
+                        else if (item.getItemId() == R.id.action_menu14){
+                            destination_zoom(37.45069,127.12852);
+                        }
+                        //학군단
+                        else if (item.getItemId() == R.id.action_menu15){
+                            destination_zoom(37.45152,127.12887);
+                        }
+                        //예술체육대학2
+                        else if (item.getItemId() == R.id.action_menu16){
+                            destination_zoom(37.45169,127.12963);
+                        }
+                        //예술체육대학1
+                        else if (item.getItemId() == R.id.action_menu17){
+                            destination_zoom(37.45214,127.12872);
+                        }
+
+                        //대학원
+                        else if (item.getItemId() == R.id.action_menu18){
+                            destination_zoom(37.45270,127.13006);
+                        }
+                        //교육대학원
+                        else if (item.getItemId() == R.id.action_menu19){
+                            destination_zoom(37.45187,127.13165);
+                        }
+
+                        //중앙도서관
+                        else if (item.getItemId() == R.id.action_menu20){
+                            destination_zoom(37.45228,127.13305);
+                        }
+
+                        //학생회관
+                        else if (item.getItemId() == R.id.action_menu21){
+                            destination_zoom(37.45318,127.13437);
+                        }
+
+                        //학생생활관(기숙사)
+                        else if (item.getItemId() == R.id.action_menu22){
+                            destination_zoom(37.45590,127.13464);
+                        }
+
+//                        //
 //                        else if (item.getItemId() == R.id.action_menu23){
 //                            destination_zoom(37.31667,127.12695);
 //                        }

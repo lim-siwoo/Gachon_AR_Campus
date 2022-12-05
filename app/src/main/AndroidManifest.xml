@@ -35,8 +35,6 @@
         <activity
             android:name=".ArActivity"
             android:screenOrientation="landscape" />
-        <activity
-            android:name=".BaseActivity" />
     </application>
 
 </manifest>

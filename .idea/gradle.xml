@@ -9,9 +9,9 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
+            <option value="C:/Users/ljnti/AndroidStudioProjects/Gachon_ARnavigation/unityLibrary" />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/unityLibrary" />
           </set>
         </option>
       </GradleProjectSettings>

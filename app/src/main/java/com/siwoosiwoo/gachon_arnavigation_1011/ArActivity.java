@@ -299,8 +299,8 @@ public class ArActivity extends BaseActivity implements RouteListener, ProgressC
             VisionArManager.setRoute(new Route(
                     getRoutePoints(route),
                     (float) routeProgress.durationRemaining(),
-                    "",
-                    ""
+                    "apple",
+                    "bear"
             ));
         }
     }

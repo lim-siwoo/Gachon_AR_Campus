@@ -25,69 +25,69 @@
         android:id="@+id/action_menu6"
         android:title="@string/Media_Center" />
 
-<!--    <item-->
-<!--        android:id="@+id/action_menu7"-->
-<!--        android:title="@string/BumJeong_Hall" />-->
+    <item
+        android:id="@+id/action_menu7"
+        android:title="@string/BumJeong_Hall" />
 
-<!--    <item-->
-<!--        android:id="@+id/action_menu8"-->
-<!--        android:title="@string/Humanities_Hall" />-->
+    <item
+        android:id="@+id/action_menu8"
+        android:title="@string/Humanities_Hall" />
 
-<!--    <item-->
-<!--        android:id="@+id/action_menu9"-->
-<!--        android:title="@string/Business_and_Economics_Hall" />-->
+    <item
+        android:id="@+id/action_menu9"
+        android:title="@string/Business_and_Economics_Hall" />
 
-<!--    <item-->
-<!--        android:id="@+id/action_menu10"-->
-<!--        android:title="@string/Education_Hall" />-->
+    <item
+        android:id="@+id/action_menu10"
+        android:title="@string/Education_Hall" />
 
-<!--    <item-->
-<!--        android:id="@+id/action_menu11"-->
-<!--        android:title="@string/Hyedang_Hall" />-->
+    <item
+        android:id="@+id/action_menu11"
+        android:title="@string/Hyedang_Hall" />
 
-<!--    <item-->
-<!--        android:id="@+id/action_menu12"-->
-<!--        android:title="@string/Toegye_Memorial_Central_Library" />-->
+    <item
+        android:id="@+id/action_menu12"
+        android:title="@string/Toegye_Memorial_Central_Library" />
 
-<!--    <item-->
-<!--        android:id="@+id/action_menu13"-->
-<!--        android:title="@string/Graduate_School" />-->
+    <item
+        android:id="@+id/action_menu13"
+        android:title="@string/Graduate_School" />
 
-<!--    <item-->
-<!--        android:id="@+id/action_menu14"-->
-<!--        android:title="@string/International_Hall" />-->
+    <item
+        android:id="@+id/action_menu14"
+        android:title="@string/International_Hall" />
 
-<!--    <item-->
-<!--        android:id="@+id/action_menu15"-->
-<!--        android:title="@string/Laboratories" />-->
+    <item
+        android:id="@+id/action_menu15"
+        android:title="@string/Laboratories" />
 
-<!--    <item-->
-<!--        android:id="@+id/action_menu16"-->
-<!--        android:title="@string/Bear_Statue" />-->
+    <item
+        android:id="@+id/action_menu16"
+        android:title="@string/Bear_Statue" />
 
-<!--    <item-->
-<!--        android:id="@+id/action_menu17"-->
-<!--        android:title="@string/Main_Gate" />-->
+    <item
+        android:id="@+id/action_menu17"
+        android:title="@string/Main_Gate" />
 
-<!--    <item-->
-<!--        android:id="@+id/action_menu18"-->
-<!--        android:title="@string/Gymnasium_Performing_Arts_Center" />-->
+    <item
+        android:id="@+id/action_menu18"
+        android:title="@string/Gymnasium_Performing_Arts_Center" />
 
-<!--    <item-->
-<!--        android:id="@+id/action_menu19"-->
-<!--        android:title="@string/Main_Stadium" />-->
+    <item
+        android:id="@+id/action_menu19"
+        android:title="@string/Main_Stadium" />
 
-<!--    <item-->
-<!--        android:id="@+id/action_menu20"-->
-<!--        android:title="@string/Performing_Arts_Hall" />-->
+    <item
+        android:id="@+id/action_menu20"
+        android:title="@string/Performing_Arts_Hall" />
 
-<!--    <item-->
-<!--        android:id="@+id/action_menu21"-->
-<!--        android:title="@string/Dormitory" />-->
+    <item
+        android:id="@+id/action_menu21"
+        android:title="@string/Dormitory" />
 
-<!--    <item-->
-<!--        android:id="@+id/action_menu22"-->
-<!--        android:title="@string/Woongbi_Hall" />-->
+    <item
+        android:id="@+id/action_menu22"
+        android:title="@string/Woongbi_Hall" />
 
 <!--    <item-->
 <!--        android:id="@+id/action_menu23"-->
