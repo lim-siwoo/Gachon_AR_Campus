@@ -89,28 +89,6 @@
         android:id="@+id/action_menu22"
         android:title="@string/Woongbi_Hall" />
 
-    <item
-        android:id="@+id/action_menu23"
-        android:title="@string/Jiphyeonjae" />
 
-    <item
-        android:id="@+id/action_menu24"
-        android:title="@string/Jukjeon_Dental_Hospital" />
-
-    <item
-        android:id="@+id/action_menu25"
-        android:title="@string/Open_Ground" />
-
-    <item
-        android:id="@+id/action_menu26"
-        android:title="@string/Music_Hall" />
-
-    <item
-        android:id="@+id/action_menu27"
-        android:title="@string/Arts_Hall" />
-
-    <item
-        android:id="@+id/action_menu28"
-        android:title="@string/Waterfall_Park" />
 
 </menu>

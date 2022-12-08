@@ -22,24 +22,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="지도1" />
+            android:text="내비게이션" />
         <Button
             android:id="@+id/theme2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="지도2" />
+            android:text="미니게임" />
         <Button
             android:id="@+id/theme3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="지도3" />
+            android:text="채팅방" />
         <Button
             android:id="@+id/theme4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="지도4" />
+            android:text="게시판" />
     </LinearLayout>
 </LinearLayout>

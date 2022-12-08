@@ -33,7 +33,8 @@
             android:padding = "10dp"
             android:gravity="left"
             android:textSize="15dp"
-            android:hint="비밀번호입력"/>
+            android:hint="비밀번호입력"
+            android:inputType="textPassword"/>
         <Button
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
