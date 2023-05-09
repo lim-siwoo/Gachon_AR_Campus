@@ -21,6 +21,7 @@ Gachon AR Navigation is a mobile app designed to help users navigate the Gachon 
 - Augmented reality view
 - Real-time information about surroundings
 - Building names and directions
+- Firebase user authentication & bulletin board
 - Points of interest
 - Easy campus navigation
 
@@ -35,6 +36,20 @@ Gachon AR Navigation is a mobile app designed to help users navigate the Gachon 
 ## Method explain
 
 This section will explain the method used for developing Gachon AR Navigation.
+
+##Using Firebase database
+
+This section show Firebase`s manual.
+Using Firebase Realtime database, the client code can directly access with database.
+
+Manual
+
+1.Necessity
+-Google account
+-Android application to connect
+
+2.Process
+-
 
 ## Conclusion
 
