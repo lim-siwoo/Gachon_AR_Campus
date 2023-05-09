@@ -45,9 +45,7 @@ This section will explain about AR Explanation function
 
 Package to support location based AR
 
-details : 
-
-[Unity AR+GPS Location | Unity AR+GPS Location Docs (v3.6.0)](https://docs.unity-ar-gps-location.com/#main-features)
+details : [Unity AR+GPS Location | Unity AR+GPS Location Docs (v3.6.0)](https://docs.unity-ar-gps-location.com/#main-features)
 
 ### AR Foundation
 
