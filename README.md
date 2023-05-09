@@ -37,7 +37,7 @@ Gachon AR Navigation is a mobile app designed to help users navigate the Gachon 
 
 This section will explain the method used for developing Gachon AR Navigation.
 
-##Using Firebase database
+## Using Firebase database
 
 This section show Firebase`s manual.
 Using Firebase Realtime database, the client code can directly access with database.
@@ -46,7 +46,7 @@ Manual
 
 1.Necessity
 -Google account
--Android application to connect
+-Android application to connect(Sign in xml, activity)
 
 2.Process
 -
