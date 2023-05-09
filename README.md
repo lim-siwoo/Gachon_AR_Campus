@@ -48,7 +48,7 @@ Gachon AR Navigation uses Mapbox SDK to create its augmented reality view. The S
 6. Import the Mapbox SDK Navigation library into your project's code.
 7. You are now ready to use Mapbox SDK Navigation in your project!
 
-![sdk-install.png](Gachon%20AR%20Navigation%2047bfd5a59d6b4f398a923c36195d8787/sdk-install.png)
+![sdk-install.png](img/sdk-install.png)
 
 ### Method explain - getRoute
 
@@ -87,7 +87,7 @@ private void getRoute_navi_walking (Point origin, Point destinaton) {
 
 ### Method explain - setDestination
 
-![setDesti_img.png](Gachon%20AR%20Navigation%2047bfd5a59d6b4f398a923c36195d8787/setDesti_img.png)
+![setDesti_img.png](img/setDesti_img.png)
 
 Another key feature of Gachon AR Navigation is the ability to set a destination and receive turn-by-turn directions to that destination. When the user selects a destination on the app's map, the setDestination function is called. This function calculates the shortest route from the user's current location to the selected destination using the Mapbox Directions API. Once the route is calculated, the app displays turn-by-turn directions to the user, including distance and estimated travel time for each step of the route. With this feature, users can easily navigate to any location on campus with confidence and ease.
 
