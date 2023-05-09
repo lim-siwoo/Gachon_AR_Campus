@@ -37,6 +37,32 @@ Gachon AR Navigation is a mobile app designed to help users navigate the Gachon 
 
 This section will explain the method used for developing Gachon AR Navigation.
 
+# AR Explanation
+
+This section will explain about AR Explanation function
+
+## Unity AR + GPS Location Package
+
+Package to support location based AR
+
+details : 
+
+[Unity AR+GPS Location | Unity AR+GPS Location Docs (v3.6.0)](https://docs.unity-ar-gps-location.com/#main-features)
+
+## AR Foundation
+
+Unity package that support to create multi-platform augmented reality apps with Unity.
+
+It support to choose which AR features to enable by adding the corresponding manager components to unity scene.
+
+details : [https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@5.0/manual/index.html](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@5.0/manual/index.html)
+
+## AR Core
+
+AR Core is Google’s augmented reality SDK offering cross-platform APIs to build AR apps on Android, iOS, Unity, and Web.
+
+details : [https://developers.google.com/ar](https://developers.google.com/ar)
+
 ## Using Firebase database
 
 This section show Firebase`s manual.
