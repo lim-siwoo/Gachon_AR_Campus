@@ -350,10 +350,10 @@ https://firebase.google.com/docs/projects/learn-more?hl=ko
 ### Link with android studio
 
 Process   
-1. press the [sawwheel icon]–[Project Settings] button under the Firebase logo at the top of the screen, there is the same button as the one you saw earlier.   
-2. Create the package name and app nickname for Android in the order it appears on the screen. The app nickname is written by the developer to find out, so you don't have to write it the same as the image below.   
-3. Click Register App to continue. You can copy the package name separately and paste it as it is while creating the Android project.   
-4. Create an Android project before proceeding to the next step. Turn on Android Studio, select Empty Activity, and create a new project named Firebase.   
+1. press the [sawwheel icon]–[Project Settings] button under the Firebase logo at the top of the screen, there is the same button as the one you saw earlier.___   
+2. Create the package name and app nickname for Android in the order it appears on the screen. The app nickname is written by the developer to find out, so you don't have to write it the same as the image below.___   
+3. Click Register App to continue. You can copy the package name separately and paste it as it is while creating the Android project.___   
+4. Create an Android project before proceeding to the next step. Turn on Android Studio, select Empty Activity, and create a new project named Firebase.___   
 5. Paste the firebase name you created in 2. into the package name. After you finish creating, click the [Finish] button to create the project.   
 6. Go back to the Firebase website and click [download google-services.json] to download the json file.   
 7. Go back to Android Studio, and then drop the downloaded json file under the [Firebase]-[app] directory.   
