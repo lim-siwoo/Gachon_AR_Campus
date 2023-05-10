@@ -378,6 +378,134 @@ dependencies {
 12. Go back to the Firebase website and click Next to complete the setup.<br/><br/>
 13. Click [Tools – Firebase – Realtime Database] to check link.<br/><br/>
 ![그림3](https://github.com/lim-siwoo/Gachon_ARnavigation/assets/71545293/054ac082-30a9-47fa-a82f-fa2baed59d2c)<br/><br/>
+
+### Using Log in & Sign in with android studio
+
+To make function that sign in & log in, the database and application have to give token and get token. The token must send to firebase and server give id token to application to get login. The receive data is 3types(name, email, and password). The user can register name, email & password, the id token is automatically register.<br/><br/>
+
+### Sign in
+
+```
+setContentView(R.layout.activity_register);
+
+        mFirebaseAuth = FirebaseAuth.getInstance();
+        mDatabaseReference = FirebaseDatabase.getInstance().getReference("FirebaseEmailAccount");
+
+        et_email = findViewById(R.id.email);
+        et_pwd = findViewById(R.id.passWord);
+        et_name = findViewById(R.id.name);
+        btn_register = findViewById(R.id.btn_register);
+
+        btn_register.setOnClickListener(v -> {
+            String strEmail = et_email.getText().toString();
+            String strPwd = et_pwd.getText().toString();
+            String strName = et_name.getText().toString();
+
+            mFirebaseAuth.createUserWithEmailAndPassword(strEmail, strPwd).addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) { //유저가 다 만들어졌을 때
+                    if(task.isSuccessful()) {
+                        FirebaseUser firebaseUser =mFirebaseAuth.getCurrentUser(); //로그인을 성공해서 가능한 것
+                        UserAccount account = new UserAccount();
+                        account.setEmail(firebaseUser.getEmail());
+                        account.setPassword(strPwd);
+                        account.setIdToken(firebaseUser.getUid());
+
+                        //database에 저장
+                        mDatabaseReference.child("userAccount").child(firebaseUser.getUid()).setValue(account);
+
+                        Toast.makeText(RegisterActivity.this, "회원가입에 성공하셨습니다.", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(RegisterActivity.this, loginActivity.class);
+                        startActivity(intent);
+                    }
+                    else {
+                        Toast.makeText(RegisterActivity.this, "회원가입에 실패하셨습니다.", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
+        });
+
+```
+
+### User data
+
+```
+public class UserAccount {
+    private String email;
+    private String password;
+    private String idToken;
+    private String name;
+
+    public void setIdToken(String idToken) {
+        this.idToken = idToken;
+    }
+
+    public String getIdToken() {
+        return idToken;
+    }
+
+    public UserAccount() { } //빈 생성자가 필요 (firebase 관련)
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+
+
+}
+```
+
+### Log in
+
+```
+mFirebaseAuth = FirebaseAuth.getInstance();
+
+        et_email = findViewById(R.id.email);
+        et_pwd = findViewById(R.id.passWord);
+
+        btn_login = findViewById(R.id.btn_login);
+        btn_login.setOnClickListener(v -> {
+            String strEmail = et_email.getText().toString();
+            String strPwd = et_pwd.getText().toString();
+
+            mFirebaseAuth.signInWithEmailAndPassword(strEmail, strPwd).addOnCompleteListener(loginActivity.this, new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if(task.isSuccessful()) {
+                        Intent intent = new Intent(loginActivity.this, home_Activity.class);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        Toast.makeText(loginActivity.this, "로그인 실패", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
+        });
+    }
+
+}
+```
+
 ## Conclusion
 
 In conclusion, Gachon AR Navigation is a useful and convenient mobile app for navigating the Gachon University campus. Whether you are a student, faculty member, or visitor, this app will help you easily find your way around campus and discover all that Gachon University has to offer.
