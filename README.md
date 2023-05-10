@@ -362,7 +362,7 @@ Process
 9. Go back to Android Studio, open the build.gradle (Project:) file, and insert the SDK additional code provided by the Firebase website. The official site tells you to add multiple lines, but in reality, you only need to add one line to the dependencies.
 10. Next, open the build.gradle(Module:) file and add the code. Add one line of id to the top plugins and two dependencies to the bottom dependencies.
 
-''' 
+```
 plugins {
 id 'com.google.gms.google-services' 
 }
@@ -370,7 +370,8 @@ dependencies {
      implementation platform('com.google.firebase:firebase-bom:29.0.0')
      implementation 'com.google.firebase:firebase-analytics-ktx' 
 }
-'''
+
+```
 
 11. Click to apply [Sync Now] in the upper right corner of Android Studio.
 ![그림2](https://github.com/lim-siwoo/Gachon_ARnavigation/assets/71545293/8c02b969-6779-4ec5-abe3-bc3cc8b3f4ad)
