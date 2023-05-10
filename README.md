@@ -350,17 +350,32 @@ https://firebase.google.com/docs/projects/learn-more?hl=ko
 ### Link with android studio
 
 Process   
-1. press the [sawwheel icon]–[Project Settings] button under the Firebase logo at the top of the screen, there is the same button as the one you saw earlier.___   
-2. Create the package name and app nickname for Android in the order it appears on the screen. The app nickname is written by the developer to find out, so you don't have to write it the same as the image below.___   
-3. Click Register App to continue. You can copy the package name separately and paste it as it is while creating the Android project.___   
-4. Create an Android project before proceeding to the next step. Turn on Android Studio, select Empty Activity, and create a new project named Firebase.___   
+1. press the [sawwheel icon]–[Project Settings] button under the Firebase logo at the top of the screen, there is the same button as the one you saw earlier.   
+2. Create the package name and app nickname for Android in the order it appears on the screen. The app nickname is written by the developer to find out, so you don't have to write it the same as the image below.   
+3. Click Register App to continue. You can copy the package name separately and paste it as it is while creating the Android project.   
+4. Create an Android project before proceeding to the next step. Turn on Android Studio, select Empty Activity, and create a new project named Firebase.   
 5. Paste the firebase name you created in 2. into the package name. After you finish creating, click the [Finish] button to create the project.   
 6. Go back to the Firebase website and click [download google-services.json] to download the json file.   
 7. Go back to Android Studio, and then drop the downloaded json file under the [Firebase]-[app] directory.   
 ![그림1](https://github.com/lim-siwoo/Gachon_ARnavigation/assets/71545293/6cbeb74f-5bca-431a-a207-5bac5f8911c1)
+8. You must now add the Firebase SDK to your Android. Go back to the Firebase website and click Next to see the code you want to modify. Select Java as the code to add.
+9. Go back to Android Studio, open the build.gradle (Project:) file, and insert the SDK additional code provided by the Firebase website. The official site tells you to add multiple lines, but in reality, you only need to add one line to the dependencies.
+10. Next, open the build.gradle(Module:) file and add the code. Add one line of id to the top plugins and two dependencies to the bottom dependencies.
 
+‘’’ plugins {
+id 'com.google.gms.google-services' 
+}
+dependencies {
+     implementation platform('com.google.firebase:firebase-bom:29.0.0')
+     implementation 'com.google.firebase:firebase-analytics-ktx' 
+}
+‘’’
 
-
+11. Click to apply [Sync Now] in the upper right corner of Android Studio.
+![그림2](https://github.com/lim-siwoo/Gachon_ARnavigation/assets/71545293/8c02b969-6779-4ec5-abe3-bc3cc8b3f4ad)
+12. Go back to the Firebase website and click Next to complete the setup.
+13. Click [Tools – Firebase – Realtime Database] to check link
+![그림3](https://github.com/lim-siwoo/Gachon_ARnavigation/assets/71545293/054ac082-30a9-47fa-a82f-fa2baed59d2c)
 ## Conclusion
 
 In conclusion, Gachon AR Navigation is a useful and convenient mobile app for navigating the Gachon University campus. Whether you are a student, faculty member, or visitor, this app will help you easily find your way around campus and discover all that Gachon University has to offer.
