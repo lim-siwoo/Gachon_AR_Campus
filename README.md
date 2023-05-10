@@ -364,7 +364,7 @@ Process
 
 ```
 plugins {
-id 'com.google.gms.google-services' 
+	id 'com.google.gms.google-services' 
 }
 dependencies {
      implementation platform('com.google.firebase:firebase-bom:29.0.0')
