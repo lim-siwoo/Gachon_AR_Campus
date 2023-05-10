@@ -385,6 +385,9 @@ To make function that sign in & log in, the database and application have to giv
 
 ### Sign in
 
+Using FirebaseAuth, the authentication function operate and user`s email & password are go to firebase. The email & password are save in user data form and id token also given to ID.
+It will use in bulletin Board.
+
 ```
 setContentView(R.layout.activity_register);
 
