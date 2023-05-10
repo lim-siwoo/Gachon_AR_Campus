@@ -329,19 +329,25 @@ AR Core is Google’s augmented reality SDK offering cross-platform APIs to buil
 
 details : [https://developers.google.com/ar](https://developers.google.com/ar)
 
-## Using Firebase database
+## Setting Firebase
 
-This section show Firebase`s manual.
-Using Firebase Realtime database, the client code can directly access with database.
+The Firebase Realtime database is a real-time database that can be accessed directly from the client side to perform applications. In addition, events occur when data is maintained locally and offline, so it can provide convenient functions to users.
 
-Manual
+You have to do pre-work before using firebase database.
 
-1.Necessity
--Google account
--Android application to connect(Sign in xml, activity)
+### Firebase Join
 
-2.Process
--
+-Necessity
+1. Google account 
+2. Android studio application
+
+Process
+Create Firebase project(setting name & Google Analytics
+details : https://firebase.google.com/docs/projects/learn-more?hl=ko
+
+### Link with android studio
+Process
+
 
 ## Conclusion
 
