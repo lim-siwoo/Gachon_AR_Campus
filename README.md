@@ -343,7 +343,9 @@ You have to do pre-work before using firebase database.
 
 Process
 Create Firebase project(setting name & Google Analytics
-details : https://firebase.google.com/docs/projects/learn-more?hl=ko
+
+details : 
+https://firebase.google.com/docs/projects/learn-more?hl=ko
 
 ### Link with android studio
 Process
