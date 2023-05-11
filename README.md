@@ -6,7 +6,7 @@
 - Features
 - How to use
 - Method explain
-- Conclusion
+- Members
 
 # Gachon AR Navigation
 
@@ -708,6 +708,7 @@ mFirebaseAuth = FirebaseAuth.getInstance();
 }
 ```
 
-## Conclusion
-
-In conclusion, Gachon AR Navigation is a useful and convenient mobile app for navigating the Gachon University campus. Whether you are a student, faculty member, or visitor, this app will help you easily find your way around campus and discover all that Gachon University has to offer.
+## Member
+**임시우** | siwoo5530@gmail.com
+**이준희** | 
+**이종** | 
