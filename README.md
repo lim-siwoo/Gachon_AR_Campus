@@ -329,8 +329,6 @@ AR Core is Google’s augmented reality SDK offering cross-platform APIs to buil
 
 details : [https://developers.google.com/ar](https://developers.google.com/ar)
 
-# readme
-
 ### AR Image Tracking
 
 When device camera tracked reference image (already trained) each prefabs will appear.
