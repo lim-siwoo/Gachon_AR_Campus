@@ -709,6 +709,6 @@ mFirebaseAuth = FirebaseAuth.getInstance();
 ```
 
 ## Member
-**임시우** | siwoo5530@gmail.com
-**이준희** | 
-**이종** | 
+**임시우** | siwoo5530@gmail.com  
+**이준희** |   
+**이종은** |   
