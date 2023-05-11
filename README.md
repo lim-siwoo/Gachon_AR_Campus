@@ -329,6 +329,207 @@ AR Core is Google’s augmented reality SDK offering cross-platform APIs to buil
 
 details : [https://developers.google.com/ar](https://developers.google.com/ar)
 
+# readme
+
+### AR Image Tracking
+
+When device camera tracked reference image (already trained) each prefabs will appear.
+
+<details>
+
+<summary>접기/펼치기</summary>
+
+code example
+
+```csharp
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
+
+public class ARTrackedMultiImageManager : MonoBehaviour
+{
+    [SerializeField]
+    // 모든 prefab 목록
+    private GameObject[] trackedPrefabs;
+
+    // 이미지 인식 후 출력되는 오브젝트 목록
+    private Dictionary<string, GameObject> spawnedObjects = new Dictionary<string, GameObject>();
+    private ARTrackedImageManager trackedImageManager;
+
+    private void Awake()
+    {
+        trackedImageManager = GetComponent<ARTrackedImageManager>();
+
+        foreach(GameObject prefab in trackedPrefabs)
+        {
+            GameObject clone = Instantiate(prefab);// object 생성
+            clone.name = prefab.name; // object 이름 설정
+            clone.SetActive(false); // object 비활성화 (활성화 시 보이게 됨)
+            spawnedObjects.Add(clone.name, clone); // dictionary 형태로 저장
+        }
+    }
+
+    // 인식 O
+    private void OnEnable()
+    {
+        trackedImageManager.trackedImagesChanged += OnTrackedImagesChanged;
+    }
+
+    // 인식 X
+    private void OnDisable()
+    {
+        trackedImageManager.trackedImagesChanged -= OnTrackedImagesChanged;
+    }
+
+    private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
+    {
+        foreach(var trackedImage in eventArgs.added)
+        {
+            UpdateImage(trackedImage);
+        }
+
+        foreach (var trackedImage in eventArgs.updated)
+        {
+            UpdateImage(trackedImage);
+        }
+
+        foreach (var trackedImage in eventArgs.removed)
+        {
+            spawnedObjects[trackedImage.name].SetActive(false);
+        }
+    }
+
+    // 인식된 image에 따라 object 출력
+    private void UpdateImage(ARTrackedImage trackedImage)
+    {
+        string name = trackedImage.referenceImage.name;
+        GameObject trackedObject = spawnedObjects[name];
+
+        // tracking 이면 출력
+        if(trackedImage.trackingState == TrackingState.Tracking)
+        {
+            trackedObject.transform.position = trackedImage.transform.position;
+            trackedObject.transform.rotation = trackedImage.transform.rotation;
+            trackedObject.SetActive(true);
+        }
+
+        // tracking 아니면 미출력
+        else
+        {
+            trackedObject.SetActive(false);
+        }
+    }
+}
+```
+
+</details>
+
+### Prefab touch event
+
+When image tracked each prefabs will appear. User can touch those prefab and make event. each touch for each prefab make move to each scenes.
+
+<details>
+
+<summary>접기/펼치기</summary>
+
+code example
+
+```csharp
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class mainscript : MonoBehaviour
+{
+    public void newObject(string objName, Vector3 pos)
+    {
+        Instantiate(Resources.Load(objName), pos, Quaternion.identity);
+    }
+    void Update()
+    {
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                Application.Quit();
+            }
+
+            if(Input.touchCount > 0)
+            {
+                Touch touch = Input.GetTouch(0);
+                Ray ray;
+                RaycastHit hit;
+
+                switch (touch.phase)
+                {
+                    case TouchPhase.Began:
+                        ray = Camera.main.ScreenPointToRay(touch.position);
+                        Physics.Raycast(ray, out hit, Mathf.Infinity);
+
+                        if(hit.collider != null)
+                        {
+                            Debug.Log(touch.position);
+                            Debug.Log(hit.collider.gameObject.name);
+                            switch (hit.collider.gameObject.name)
+                            {
+                                case "art1":
+                                    Debug.Log("art1");
+                                    SceneManager.LoadScene("art1");
+                                    break;
+
+                                case "emblem":
+                                    Debug.Log("emblem");
+                                    SceneManager.LoadScene("infinity");
+                                    break;
+                                case "art2":
+                                    Debug.Log("art2");
+                                    SceneManager.LoadScene("art2");
+                                    break;
+                                case "biology":
+                                    Debug.Log("biology");
+                                    SceneManager.LoadScene("biology");
+                                    break;
+                                case "engineering1":
+                                    Debug.Log("engineering1");
+                                    SceneManager.LoadScene("engineering1");
+                                    break;
+                                case "engineering2":
+                                    Debug.Log("engineering2");
+                                    SceneManager.LoadScene("engineering2");
+                                    break;
+                                case "global":
+                                    Debug.Log("global");
+                                    SceneManager.LoadScene("global");
+                                    break;
+                                case "ittech":
+                                    Debug.Log("ittech");
+                                    SceneManager.LoadScene("ittech");
+                                    break;
+                                case "ladybug":
+                                    Debug.Log("ladybug");
+                                    SceneManager.LoadScene("ladybug");
+                                    break;
+                                case "subway":
+                                    Debug.Log("subway");
+                                    SceneManager.LoadScene("subway");
+                                    break;
+
+                            }
+                        }
+                        break;
+                }
+            }
+        }
+    }
+
+}
+```
+
+</details>
+
 ## Setting Firebase
 
 The Firebase Realtime database is a real-time database that can be accessed directly from the client side to perform applications. In addition, events occur when data is maintained locally and offline, so it can provide convenient functions to users.
