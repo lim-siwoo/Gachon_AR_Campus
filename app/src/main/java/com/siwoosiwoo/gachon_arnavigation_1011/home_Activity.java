@@ -23,6 +23,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class home_Activity extends AppCompatActivity {
     private Button map1;
     private Button friend_4;
+    private Button logout;
 
 
 
@@ -42,6 +43,23 @@ public class home_Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        friend_4 = (Button) findViewById(R.id.theme4);
+        friend_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // MainActivity 연결
+                Intent intent = new Intent(home_Activity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        logout = (Button) findViewById(R.id.theme5);
+        logout.setOnClickListener(new View.OnClickListener() {
+            auth.signOut();
+            Toast.makeText(this, "로그아웃", Toast.LENGTH_SHORT).show();
+            activity?.finish();
+        }
 
 
 
