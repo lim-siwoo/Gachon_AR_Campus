@@ -44,6 +44,10 @@
             android:name=".MainActivity" />
         <activity
             android:name=".RegisterActivity" />
+        <activity
+            android:name=".notice_board" />
+        <activity
+            android:name=".CreatePostActivity" />
     </application>
 
 </manifest>

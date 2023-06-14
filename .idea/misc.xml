@@ -5,12 +5,12 @@
       <map>
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/drawable/ic_launcher_background.xml" value="0.177" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/activity_ar_navigation.xml" value="0.18645833333333334" />
-        <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/activity_create_post.xml" value="0.1213768115942029" />
+        <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/activity_create_post.xml" value="0.22" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/activity_detail.xml" value="0.15427350427350428" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/activity_list.xml" value="0.12047101449275362" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/activity_login.xml" value="0.45524296675191817" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/activity_main.xml" value="0.18645833333333334" />
-        <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/activity_register.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/activity_register.xml" value="0.22" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/activity_register_post.xml" value="0.15427350427350428" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/bulletingboard.xml" value="0.33" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/chatting_function_friend_info.xml" value="0.1358695652173913" />
@@ -22,9 +22,9 @@
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/item_notice.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/item_user_list.xml" value="0.18541666666666667" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/itme_user_list.xml" value="0.18541666666666667" />
-        <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/loginpage.xml" value="0.1390625" />
+        <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/loginpage.xml" value="0.25" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/notice_board.xml" value="0.18802083333333333" />
-        <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/notice_boardmain.xml" value="0.1213768115942029" />
+        <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/notice_boardmain.xml" value="0.25" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/signup.xml" value="0.18541666666666667" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/user_list.xml" value="0.152991452991453" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/write_post.xml" value="0.15213675213675212" />

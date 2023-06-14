@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="96dp"
         android:gravity="center"
-        android:text="mainpage"
+        android:text="홈 화면"
+        android:textStyle="bold"
         android:textColor="#1F51B7"
         android:textSize="24sp" />
     <LinearLayout
@@ -23,34 +24,44 @@
             android:layout_width="190dp"
             android:layout_height="69dp"
             android:layout_margin="10dp"
-            android:text="내비게이션" />
+            android:text="내비게이션"
+            android:textStyle="bold"
+            app:backgroundTint="#1760DF" />
 
         <Button
             android:id="@+id/theme2"
             android:layout_width="191dp"
             android:layout_height="68dp"
             android:layout_margin="10dp"
-            android:text="미니게임" />
+            android:text="미니게임"
+            android:textStyle="bold"
+            app:backgroundTint="#1760DF" />
 
         <Button
             android:id="@+id/theme3"
             android:layout_width="187dp"
             android:layout_height="76dp"
             android:layout_margin="10dp"
-            android:text="채팅방" />
+            android:text="채팅방"
+            android:textStyle="bold"
+            app:backgroundTint="#1760DF" />
 
         <Button
             android:id="@+id/theme4"
             android:layout_width="184dp"
             android:layout_height="76dp"
             android:layout_margin="10dp"
-            android:text="게시판" />
+            android:text="게시판"
+            android:textStyle="bold"
+            app:backgroundTint="#1760DF" />
 
         <Button
             android:id="@+id/theme5"
             android:layout_width="184dp"
             android:layout_height="76dp"
             android:layout_margin="10dp"
-            android:text="로그아웃" />
+            android:text="로그아웃"
+            android:textStyle="bold"
+            app:backgroundTint="#1760DF" />
     </LinearLayout>
 </LinearLayout>

@@ -49,17 +49,12 @@ public class home_Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // MainActivity 연결
-                Intent intent = new Intent(home_Activity.this, MainActivity.class);
-                startActivity(intent);
+                Intent intent2 = new Intent(home_Activity.this, notice_board.class);
+                startActivity(intent2);
             }
         });
 
-        logout = (Button) findViewById(R.id.theme5);
-        logout.setOnClickListener(new View.OnClickListener() {
-            auth.signOut();
-            Toast.makeText(this, "로그아웃", Toast.LENGTH_SHORT).show();
-            activity?.finish();
-        }
+
 
 
 
