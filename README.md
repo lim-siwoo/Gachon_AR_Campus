@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Gachon AR Navigation is a mobile app designed to help users navigate the Gachon University campus. By using augmented reality technology, the app displays real-time information about your surroundings, including building names, directions, and other points of interest. With Gachon AR Navigation, you can easily find your way around campus and explore all that Gachon University has to offer.
+Gachon AR Campus is a mobile app designed to help users navigate the Gachon University campus. By using augmented reality technology, the app displays real-time information about your surroundings, including building names, directions, and other points of interest. With Gachon AR Navigation, you can easily find your way around campus and explore all that Gachon University has to offer.
 
 ## Features
 
