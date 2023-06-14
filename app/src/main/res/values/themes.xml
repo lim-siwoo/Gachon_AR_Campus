@@ -12,6 +12,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
     </style>
     <style name="Theme.Gachon_ARnavigation_1011.NoActionBar">
         <item name="windowActionBar">false</item>
@@ -21,4 +22,5 @@
         parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.Gachon_ARnavigation_1011.PopupOverlay"
         parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

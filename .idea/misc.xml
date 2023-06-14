@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/drawable/button_background.xml" value="0.177" />
+        <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/drawable/button_background2.xml" value="0.177" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/drawable/ic_launcher_background.xml" value="0.177" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/activity_ar_navigation.xml" value="0.18645833333333334" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/activity_create_post.xml" value="0.22" />
@@ -18,7 +20,7 @@
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/chatting_message.xml" value="0.190625" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/chattingroom.xml" value="0.1" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/custom_comment.xml" value="0.18802083333333333" />
-        <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/home_page.xml" value="0.45758354755784064" />
+        <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/home_page.xml" value="0.22" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/item_notice.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/item_user_list.xml" value="0.18541666666666667" />
         <entry key="..\:/Users/jjoki/AndroidStudioProjects/Gachon_ARnavigation/app/src/main/res/layout/itme_user_list.xml" value="0.18541666666666667" />

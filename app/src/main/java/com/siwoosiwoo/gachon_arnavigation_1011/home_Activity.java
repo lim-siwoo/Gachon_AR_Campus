@@ -54,6 +54,15 @@ public class home_Activity extends AppCompatActivity {
             }
         });
 
+        logout = (Button) findViewById(R.id.theme5);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // MainActivity 연결
+                Intent intent2 = new Intent(home_Activity.this, loginActivity.class);
+                startActivity(intent2);
+            }
+        });
 
 
 
