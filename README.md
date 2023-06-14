@@ -303,7 +303,8 @@ private void initLocationEngine() {
         }
 ```
 ## 2D Navigation
-![슬라이드19.png](img/슬라이드9.PNG)
+![슬라이드9.png](img/슬라이드9.PNG)
+![슬라이드10.png](img/슬라이드10.PNG)
 
 ## AR Explanation
 
