@@ -12,6 +12,9 @@
 
 Gachon AR Campus is a mobile app designed to help users navigate the Gachon University campus. By using augmented reality technology, the app displays real-time information about your surroundings, including building names, directions, and other points of interest. With Gachon AR Navigation, you can easily find your way around campus and explore all that Gachon University has to offer.
 
+## Architecture
+![슬라이드6.png](img/슬라이드6.PNG)
+
 ## Features
 
 - Augmented reality view
@@ -299,11 +302,14 @@ private void initLocationEngine() {
             }
         }
 ```
-
+## 2D Navigation
+![슬라이드19.png](img/슬라이드9.PNG)
 
 ## AR Explanation
 
 This section will explain about AR Explanation function
+
+![슬라이드13.png](img/슬라이드13.PNG)
 
 ### Unity AR + GPS Location Package
 
@@ -523,6 +529,10 @@ public class mainscript : MonoBehaviour
 ```
 
 </details>
+
+## Notice board
+![슬라이드15.png](img/슬라이드15.PNG)
+
 
 ## Setting Firebase
 
