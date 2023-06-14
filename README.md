@@ -1,4 +1,4 @@
-# Gachon AR Navigation
+# Gachon AR Campus
 
 # Index
 
